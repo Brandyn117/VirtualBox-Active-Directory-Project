@@ -1,4 +1,4 @@
-# NAT & Routing Configuration (RRAS)
+# ⛵ NAT & Routing Configuration (RRAS)
 This setup will allow a client to be on VirtualBox’s internal network while still being able to access the internet through the domain controller. 
 
 <b> 1. Server Selection </b>
