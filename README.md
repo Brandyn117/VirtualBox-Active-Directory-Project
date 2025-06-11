@@ -61,3 +61,4 @@ VM1 will serve as the domain controller and host Active Directory. It will have 
 - [RAS / NAT Setup](documentation/ras-nat-routing-setup.md)
 - [DHCP Setup](documentation/dhcp-setup.md)
 - [PowerShell Script](documentation/user-automation.md)
+- [Client Setup & Domain Join](documentation/client-setup.md)
