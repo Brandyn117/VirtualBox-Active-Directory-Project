@@ -55,4 +55,6 @@ VM1 will serve as the domain controller and host Active Directory. It will have 
   <li>I’ll create a second VM, install Windows 10, and connect it to the internal network</li>
   <li>Then I’ll join the client to the domain and log in using one of the domain user accounts</li>
 </ul>
+
 ## 🧱 Project Breakdown
+- [Domain Controller Setup](documentation/domain-controller-setup.md) 
