@@ -21,21 +21,35 @@
 
 <img src="../images/ClientSetup5.png" alt="NIC" width="650">
 
+## Joining the Domain
 
+1. I started by opening the “About” settings on my Windows 10 client and clicked on “Rename this PC (advanced)” to bring up the classic System Properties dialog, which is needed for joining the domain.
 
+<img src="../images/JoiningDomain.png" alt="NIC" width="600">
 
+2. In the System Properties window, I clicked the “Change…” button to open the Computer Name/Domain settings. This is where I could rename the computer and specify the domain to join.
 
+<img src="../images/JoiningDomain2.png" alt="NIC" width="400">
 
+3. I renamed the computer to CLIENT1 and selected the Domain radio button, then typed in mydomain.com, which matches the domain hosted on my domain controller.
 
+<img src="../images/JoiningDomain3.png" alt="NIC" width="400">
 
+4. After entering the domain and authenticating, I received a message confirming: “Welcome to the mydomain.com domain.” This verified that the client VM successfully joined the Active Directory domain.
 
+<img src="../images/JoiningDomain4.png" alt="NIC" width="500">
 
+5. Back on the domain controller, I opened Active Directory Users and Computers (ADUC) and confirmed that CLIENT1 appeared under the Computers container. This proves that the client was registered in the domain.
 
+<img src="../images/JoiningDomain5.png" alt="NIC" width="400">
 
+6. Before logging in, I confirmed that the user cbun existed in the _USERS organizational unit. This account was one of the many I created earlier using the PowerShell script.
 
+<img src="../images/JoiningDomain6.png" alt="NIC" width="400">
 
+7. On the client VM, I logged in using the domain account cbun, and verified it with the whoami command. The output mydomain\cbun confirmed that I was successfully logged into the domain from the client machine.
 
-
+<img src="../images/JoiningDomain7.png" alt="NIC" width="800">
 
 
 
