@@ -25,16 +25,22 @@ External NIC will recieves DHCP from home router
 <img src="../images/DomainSetup1.png" alt="DS" width="600">
 2. Server Roles - Displays selection of the Active Directory Domain Services (AD DS) role, which is the foundation of building a domain controller. This step also installs the DNS Server role automatically when selected.
 <img src="../images/DomainSetup2.png" alt="DS" width="600">
-3. Deployment Configuration - Here I selected "Add a new forest", which indicates I’m creating a brand-new Active Directory environment. The root domain name mydomain.com is the base of my domain hierarchy.
+3. Deployment Configuration - After installing AD DS,  I then had to promote the server to a domain controller and create the domain. Here I selected "Add a new forest", which indicates I’m creating a brand-new Active Directory environment. The root domain name mydomain.com is the base of my domain hierarchy.
 <img src="../images/DomainSetup3.png" alt="DS" width="600">
 4. Domain Controller Options - I chose Windows Server 2016 functional level, enabling newer AD features. DNS and Global Catalog are enabled by default. The Directory Services Restore Mode (DSRM) password is set here for recovery scenarios.
 <img src="../images/DomainSetup4.png" alt="DS" width="600">
 5. After running the install and restarting I am presented with the Login Screen. This is my post-domain-promotion login screen, showing MYDOMAIN\Administrator. It visually confirms that the domain has been created and is operational.
 <img src="../images/DomainSetup6.png" alt="DS" width="600">
 
-
-
-
+## Creating a Domain Admin Account
+1. Creating an OU - Shows creation of an Organizational Unit (OU) named _ADMINS.
+<img src="../images/DomainSetup7.png" alt="DS" width="500">
+2. Creating a User - Displays creation of a user account b.thompson inside the _ADMINS OU. Good for demonstrating user provisioning within the new domain.
+<img src="../images/DomainSetup8.png" alt="DS" width="500">
+3. Group Assignment - Shows adding b.thompson to the Domain Admins group — a high-privilege group used for administrative access across the domain.
+<img src="../images/DomainSetup9.png" alt="DS" width="400">
+4. ADUC with User View - Final confirmation screenshot showing the new user account listed under the _ADMINS OU inside Active Directory Users and Computers. This verifies that the user was successfully created and organized.
+<img src="../images/DomainSetup10.png" alt="DS" width="600">
 
 
 
